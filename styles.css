@@ -20,6 +20,11 @@ body {
     color: var(--text-color);
 }
 
+.embed-container{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 .container {
     max-width: 100vw;
     margin: 0 auto;
