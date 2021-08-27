@@ -1,6 +1,7 @@
 :root {
     --text-color: rgb(36, 20, 82);
     --primary-color: rgb(103, 69, 184);
+    --primary-bg-color: #f6f6f6;
 }
 
 * {
@@ -85,7 +86,7 @@ a.highlight {
 }
 
 #header .menu-icon .nav-icon {
-    background: #333;
+    background: white;
     display: block;
     height: 3px;
     position: relative;
@@ -95,7 +96,7 @@ a.highlight {
 }
 
 #header .menu-icon .nav-icon:before, #header .menu-icon .nav-icon:after {
-    background: #333;
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -210,7 +211,7 @@ figure img {
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: var(--primary-bg-color);
 }
 
 .video-title {
@@ -243,7 +244,7 @@ iframe {
 
 .content {
     padding: 10px 38px 10px 38px;
-    background: white;
+    background: var(--primary-bg-color);
 }
 
 .inner-content {
@@ -325,7 +326,7 @@ iframe {
 
 .pricing-container {
     padding: 150px 38px 10px 38px;
-    background: white;
+    background: var(--primary-bg-color);
     display: flex;
     flex-direction: column;
 }
@@ -617,7 +618,7 @@ input[type="email"] {
     }
     .content {
         padding: 0 68px 0 68px;
-        background: white;
+        background: var(--primary-bg-color);
     }
     .container__ImageRight {
         order: 2;
