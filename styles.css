@@ -25,8 +25,8 @@ body {
 }
 
 #header {
-    background: white;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    background: var(--primary-color);
+    /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
     position: fixed;
     top: 0;
     left: 0;
@@ -38,6 +38,8 @@ body {
     margin-left: 20px;
     float: left;
     height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav ul {
@@ -57,7 +59,7 @@ nav ul li a {
     display: block;
     font-size: 1.15;
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
     padding: 10px;
 }
 
@@ -65,7 +67,7 @@ a.highlight {
     display: block;
     font-size: 1.15;
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
     padding: 10px;
 }
 
@@ -146,6 +148,8 @@ main {
 .hero {
     text-align: center;
     margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hero-title-primary {
@@ -185,9 +189,9 @@ figure {
     text-align: center;
 }
 
-figure svg {
+figure img {
     margin: 3em auto 0;
-    width: 80vw;
+    width: 85vw;
 }
 
 .waves {
@@ -538,9 +542,6 @@ input[type="email"] {
         flex-direction: row;
         flex-flow: wrap;
     }
-    #header {
-        background: white;
-    }
     #header-img {
         margin-left: -100px;
     }
@@ -562,15 +563,15 @@ input[type="email"] {
         padding: 0.5em 1em;
     }
     nav ul li a {
-        font-size: 1em;
+        font-size: 1.3em;
         text-decoration: none;
-        color: #333;
+        /* color: #333; */
         padding: 0;
     }
     a.highlight {
-        font-size: 1em;
+        font-size: 1.3em;
         text-decoration: none;
-        color: #333;
+        /* color: #333; */
         padding: 0.5em 1em;
     }
     #header .menu {
@@ -606,7 +607,7 @@ input[type="email"] {
         margin: 0.5em 0 1em 0;
         padding: 0;
     }
-    figure svg {
+    figure img {
         width: 500px;
         margin: 0;
     }
