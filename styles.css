@@ -324,21 +324,21 @@ iframe {
     object-fit: cover;
 }
 
-.pricing-container {
+.user-container {
     padding: 150px 38px 10px 38px;
     background: var(--primary-bg-color);
     display: flex;
     flex-direction: column;
 }
 
-.pricing-title {
+.user-title {
     margin-bottom: 50px;
     font-size: 23px;
     color: black;
     align-self: center;
 }
 
-.pricing-title>h2 {
+.user-title>h2 {
     font-weight: 600;
 }
 
@@ -423,7 +423,7 @@ li.first-feat {
     font-weight: normal;
 }
 
-.pricing-button {
+.user-button {
     background-color: white;
     border: 1px solid red;
     border-radius: 2em;
@@ -490,7 +490,7 @@ input[type="email"] {
         box-shadow: none;
         transform: none;
     }
-    .pricing-button {
+    .user-button {
         padding: .75em 1.5em;
     }
 }
