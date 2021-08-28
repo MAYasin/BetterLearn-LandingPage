@@ -823,6 +823,7 @@ input[type="email"] {
 
 .phonescreen-wrapper {
     overflow: hidden;
+    background: var(--primary-color);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -848,4 +849,8 @@ input[type="email"] {
     100% {
         right: 0;
     }
+}
+
+.mobile-app-container{
+    padding: 80px 0px 10px 0px;
 }
