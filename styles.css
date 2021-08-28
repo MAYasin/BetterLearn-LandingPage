@@ -512,7 +512,7 @@ input[type="email"] {
     }
     .flex-item {
         flex: 0 0 100%;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
         width: 100%;
     }
     .package:hover {
@@ -521,6 +521,9 @@ input[type="email"] {
     }
     .user-button {
         padding: .75em 1.5em;
+    }
+    figure img {
+        width: 50vw !important;
     }
 }
 
@@ -572,7 +575,7 @@ input[type="email"] {
     }
     .flex-item {
         flex: 0 0 50%;
-        margin-bottom: 1em;
+        margin-bottom: 2em;
     }
     .flex-item:not(:last-child) {
         margin-right: 0;
