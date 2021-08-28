@@ -812,7 +812,7 @@ input[type="email"] {
 .phonescreen-preview {
     position: relative;
     font-size: 0;
-    animation: movephonescreen 5s infinite;
+    animation: movephonescreen 5s infinite ease;
 }
 
 .phonescreen-preview:nth-child(2) {
