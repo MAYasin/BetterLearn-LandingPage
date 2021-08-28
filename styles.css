@@ -360,9 +360,9 @@ iframe {
 
 .flex-item {
     flex: 1;
-    width: 250px;
-    border: 1px solid rgba(0, 0, 0, .05);
-    border-radius: 8px;
+    min-width: 250px;
+    /* border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: 8px; */
 }
 
 .flex-item:not(:last-child) {
@@ -373,6 +373,8 @@ iframe {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    border-radius: 20px;
     transition: 0.25s;
     display: flex;
     flex-direction: column;
@@ -385,9 +387,19 @@ iframe {
 
 .package .header {
     color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
     border-bottom: 5px var(--text-color) solid;
     font-size: 1.6em;
     font-weight: 600;
+}
+
+.package .header .user-img{
+    border-radius: 50%;
+    width: 100px;
 }
 
 .package li {
@@ -540,6 +552,22 @@ input[type="email"] {
 }
 
 @media screen and (min-width: 820px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        flex: 0 0 50%;
+        margin-bottom: 1em;
+    }
+    .flex-item:not(:last-child) {
+        margin-right: 0;
+    }
+    .flex-item:nth-child(even) {
+        padding-left: 1em;
+    }
+    .flex-item:nth-child(odd) {
+        padding-right: 1em;
+    }
     .container {
         max-width: 80vw;
     }
