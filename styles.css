@@ -840,6 +840,10 @@ input[type="email"] {
     .phonescreen-preview .phonescreen-pic {
         width: 100%;
     }
+    .nav-card {
+        min-width: 200px !important;
+        min-height: 200px !important;
+    }
 }
 
 @keyframes movephonescreen {
@@ -862,7 +866,7 @@ input[type="email"] {
 
 .column {
     float: left;
-    width: 25%;
+    width: 50%;
     padding: 0 10px;
 }
 
@@ -870,6 +874,7 @@ input[type="email"] {
 
 .row {
     margin: 0 -5px;
+    width: 100%;
 }
 
 /* Clear floats after the columns */
@@ -886,7 +891,9 @@ input[type="email"] {
     .column {
         width: 100%;
         display: block;
-        margin-bottom: 20px;
+    }
+    .card {
+        margin-bottom: 15px !important;
     }
 }
 
@@ -897,13 +904,36 @@ input[type="email"] {
     background-color: #ffffff;
     list-style-type: none;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 2px;
     transition: 0.25s;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
 }
 
 .card:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    transform: scale(1.025);
+    cursor: pointer;
+    /* box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.025); */
+    top: -10px;
+}
+
+.nav-card {
+    min-width: 400px;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.nav-card img{
+    height: 30vh;
+    object-fit: cover;
+    margin: auto;
 }
