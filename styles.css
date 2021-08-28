@@ -810,13 +810,15 @@ input[type="email"] {
 }
 
 .phonescreen-preview {
+    position: relative;
     font-size: 0;
+    animation: movephonescreen 5s infinite;
 }
 
 .phonescreen-preview:nth-child(2) {
-    position: relative;
     z-index: 2;
     margin-top: -220px;
+    animation-delay: 2.5s;
 }
 
 .phonescreen-wrapper {
@@ -833,5 +835,17 @@ input[type="email"] {
     }
     .phonescreen-preview .phonescreen-pic {
         width: 100%;
+    }
+}
+
+@keyframes movephonescreen {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: 200px;
+    }
+    100% {
+        right: 0;
     }
 }
