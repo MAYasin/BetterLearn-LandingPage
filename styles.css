@@ -854,6 +854,56 @@ input[type="email"] {
     }
 }
 
-.mobile-app-container{
+.mobile-app-container {
     padding: 80px 0px 10px 0px;
+}
+
+/* Float four columns side by side */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+
+.card {
+    padding: 16px;
+    background-color: #ffffff;
+    list-style-type: none;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.025);
 }
