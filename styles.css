@@ -273,13 +273,13 @@ iframe {
     display: inline-block;
     padding-left: 40px;
     font-family: "Poppins", sans-serif;
-    font-size: .875rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: .10938rem;
-    color: #828282;
+    color: #000000;
 }
 
 .inter-content-subtitle::before {
@@ -843,6 +843,9 @@ input[type="email"] {
     .nav-card {
         min-width: 200px !important;
         min-height: 200px !important;
+    }
+    .nav-card img{
+        margin-left: -100px !important;
     }
 }
 
