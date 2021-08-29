@@ -945,6 +945,6 @@ input[type="email"] {
     text-decoration: none;
 }
 
-a:-webkit-any-link {
+.column a:-webkit-any-link {
     color: var(--text-color);
 }
