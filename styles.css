@@ -414,10 +414,11 @@ iframe {
     color: rgba(55, 53, 47, 0.6);
     background-color: #fff;
     padding: 1.2em;
+    padding-left: 30px !important;
 }
 
 li.features:before {
-    content: '✓';
+    content: '⚫';
     padding-right: 5px;
 }
 
