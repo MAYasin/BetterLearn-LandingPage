@@ -404,7 +404,7 @@ iframe {
     align-items: flex-end;
     flex-wrap: wrap;
     border-bottom: 5px var(--text-color) solid;
-    font-size: 1.6em;
+    font-size: larger;
     font-weight: 600;
 }
 
