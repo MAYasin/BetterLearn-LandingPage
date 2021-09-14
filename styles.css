@@ -186,7 +186,7 @@ button {
     margin-bottom: 50px;
     font-family: "Poppins", sans-serif;
     background-color: #fff;
-    color: black;
+    color: var(--primary-color);
     border: none;
     border-radius: 5px;
     padding: 15px 30px;
@@ -196,7 +196,7 @@ button {
 }
 
 button:hover {
-    background-color: black;
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -458,9 +458,9 @@ li.features {
 
 .user-button {
     background-color: white;
-    border: 1px solid red;
+    border: 1px solid var(--text-color);
     border-radius: 2em;
-    color: red;
+    color: var(--text-color);
     cursor: pointer;
     padding: .75em 1.5em;
     font-size: 1em;
