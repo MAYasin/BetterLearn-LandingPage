@@ -295,7 +295,6 @@ iframe {
     height: 5px;
     content: "";
     background-color: var(--text-color);
-    ;
     opacity: 0.7;
 }
 
@@ -386,16 +385,16 @@ iframe {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 0.25s;
     display: flex;
     flex-direction: column;
 }
 
-.package:hover {
+/* .package:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
     transform: scale(1.025);
-}
+} */
 
 .package .header {
     color: black;
@@ -920,7 +919,7 @@ input[type="email"] {
 
 .card_content {
     padding: 1rem;
-    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+    background: linear-gradient(to bottom left, rgb(71, 42, 155) 40%, rgb(152, 69, 184) 100%);
 }
 .card_content a{
     text-decoration: none;
