@@ -464,6 +464,11 @@ iframe {
     transform: scale(1.025); */
     top: -10px;
 }
+.user-cards_item {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+}
 
 .card img {
     height: auto;
