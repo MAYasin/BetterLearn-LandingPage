@@ -504,6 +504,22 @@ iframe {
     }
 }
 
+/*clouds*/
+.background--clouds {
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 282px;
+    background-image: url(./assests/images/img_bg_clouds.png);
+}
+
+@media screen and (max-width: 767px) {
+    .background--clouds {
+        height: 150px;
+        background-size: cover;
+    }
+}
+
 .problem-section {
     margin-left: 80px;
     margin-right: 80px;
