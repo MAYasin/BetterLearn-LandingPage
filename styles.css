@@ -442,7 +442,7 @@ iframe {
 
 .user-title {
     margin-bottom: 50px;
-    font-size: 23px;
+    font-size: 30px;
     color: var(--text-color);
     align-self: center;
 }
@@ -878,4 +878,9 @@ li.features {
     .user-cards_item {
         width: 25%;
     }
+}
+
+.problem-section{
+    margin-left: 80px;
+    margin-right: 80px;
 }
