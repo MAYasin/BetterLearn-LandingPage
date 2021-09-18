@@ -228,7 +228,7 @@ a.highlight {
         height: 60px;
         width: 200px;
     }
-    #header{
+    #header {
         height: 70px;
     }
 }
@@ -306,6 +306,7 @@ figure img {
 
 .video-content {
     padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -316,6 +317,7 @@ figure img {
 
 .video-title {
     font-size: 35px;
+    margin-bottom: 50px;
 }
 
 .video-subtitle {
@@ -329,19 +331,14 @@ iframe {
     width: 91vw;
 }
 
-.three-dots {
-    text-align: center;
+@media only screen and (min-width: 984px) {
+    iframe {
+        height: 33vw;
+        width: 60vw;
+    }
 }
 
-.three-dots span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: var(--text-color);
-    ;
-    display: inline-block;
-    margin: 30px 5px;
-}
+/*video section*/
 
 .content {
     padding: 10px 15px 10px 15px;
@@ -554,38 +551,6 @@ li.features {
     font-size: 1em;
 }
 
-
-#form {
-    display: flex;
-    flex-direction: row;
-}
-
-#email {
-    width: 250px;
-    height: 40px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    border: 1px solid red;
-    text-decoration: none;
-}
-
-#submit {
-    width: 100px;
-    height: 40px;
-    border: none;
-    background: red;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    border-radius: 0 5px 5px 0;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-input[type="email"] {
-    padding-left: 10px;
-}
-
 @media only screen and (max-width: 984px) {
     .flex-container {
         flex-wrap: wrap;
@@ -606,7 +571,6 @@ input[type="email"] {
         width: 80vw !important;
     }
 }
-
 
 @media screen and (min-width: 820px) {
     .package-img img {
@@ -632,8 +596,6 @@ input[type="email"] {
     .flex-item:nth-child(odd) {
         padding-right: 1em;
     }
-    
-    
     .highlight {
         border: 1px solid #333;
         border-radius: 50px;
@@ -642,11 +604,6 @@ input[type="email"] {
         background: black;
         color: white;
         border-bottom: none;
-    }
-    
-    iframe {
-        height: 30vw;
-        width: 55vw;
     }
     .content {
         padding: 0 68px 0 68px;
@@ -863,7 +820,7 @@ input[type="email"] {
     vertical-align: middle;
 }
 
-.team-section{
+.team-section {
     padding-top: 0px;
     padding-bottom: 200px;
 }
