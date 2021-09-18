@@ -42,6 +42,15 @@ html, body {
     overflow-x: hidden;
 }
 
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: var(--footer-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .embed-container {
     border-radius: 10px;
     overflow: hidden;
@@ -426,7 +435,7 @@ iframe {
 .user-title {
     margin-bottom: 50px;
     font-size: 23px;
-    color: black;
+    color: var(--text-color);
     align-self: center;
 }
 
@@ -545,14 +554,6 @@ li.features {
     font-size: 1em;
 }
 
-.subscribe-container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 #form {
     display: flex;
@@ -583,10 +584,6 @@ li.features {
 
 input[type="email"] {
     padding-left: 10px;
-}
-
-.hero-newsletter {
-    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 984px) {
