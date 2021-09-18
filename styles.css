@@ -284,15 +284,6 @@ figure img {
     width: 85vw;
 }
 
-.waves {
-    position: relative;
-    width: 100%;
-    height: 15vh;
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 150px;
-}
-
 .video-content {
     padding-top: 80px;
     display: flex;
@@ -608,40 +599,6 @@ input[type="email"] {
     }
 }
 
-/* Animation */
-
-.parallax>use {
-    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-}
-
-.parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-
-.parallax>use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-}
-
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px, 0, 0);
-    }
-    100% {
-        transform: translate3d(85px, 0, 0);
-    }
-}
 
 @media screen and (min-width: 820px) {
     .package-img img {
@@ -787,26 +744,8 @@ input[type="email"] {
 }
 
 @media (max-width: 768px) {
-    .waves {
-        height: 40px;
-        min-height: 40px;
-    }
     h1 {
         font-size: 24px;
-    }
-    .phonescreen-list {
-        top: 350px;
-        margin-left: -40px !important;
-    }
-    .phonescreen-preview {
-        width: 1000px;
-    }
-    .phonescreen-preview:first-child {
-        width: 1000px;
-    }
-    .phonescreen-preview:nth-child(2) {
-        width: 830px;
-        margin-top: -105px;
     }
 }
 
@@ -832,63 +771,6 @@ input[type="email"] {
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(41, 41, 41);
-}
-
-.phonescreen-list {
-    top: 454px;
-    left: 40%;
-    -webkit-transform: translateX(-35.6%) rotate(-30deg);
-    -ms-transform: translateX(-35.6%) rotate(-30deg);
-    transform: translateX(-35.6%) rotate(-30deg);
-    z-index: 2;
-    font-size: 0;
-    margin-left: 400px;
-}
-
-.phonescreen-preview {
-    position: relative;
-    font-size: 0;
-    animation: movephonescreen 5s infinite ease;
-}
-
-.phonescreen-preview:nth-child(2) {
-    z-index: 2;
-    margin-top: -220px;
-    animation-delay: 2.5s;
-}
-
-.phonescreen-wrapper {
-    overflow: hidden;
-    background: var(--primary-color);
-}
-
-@media only screen and (max-width: 1023px) {
-    .phonescreen-preview:first-child {
-        width: 1400px;
-    }
-    .phonescreen-preview:nth-child(2) {
-        margin-top: -150px;
-        width: 1160px;
-    }
-    .phonescreen-preview .phonescreen-pic {
-        width: 100%;
-    }
-}
-
-@keyframes movephonescreen {
-    0% {
-        right: 0;
-    }
-    50% {
-        right: 200px;
-    }
-    100% {
-        right: 0;
-    }
-}
-
-.mobile-app-container {
-    padding: 80px 0px 10px 0px;
 }
 
 /* Style the counter cards */
