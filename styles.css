@@ -1,7 +1,7 @@
 :root {
     --text-color: rgb(36, 20, 82);
     --primary-color: rgb(103, 69, 184);
-    --primary-bg-color: #f6f6f6;
+    --primary-bg-color: #ffffff;
 }
 
 * {
@@ -532,7 +532,7 @@ input[type="email"] {
         padding: .75em 1.5em;
     }
     figure img {
-        width: 50vw !important;
+        width: 80vw !important;
     }
 }
 
@@ -673,7 +673,7 @@ input[type="email"] {
         padding: 0;
     }
     figure img {
-        width: 700px;
+        width: 600px;
         margin: 0;
     }
     iframe {
@@ -960,3 +960,18 @@ input[type="email"] {
     max-width: 100%;
     vertical-align: middle;
 }
+
+.background--wave {
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-image: url(./assests/images/img_bg_wave.png);
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1920px) {
+
+    .background--wave {
+      background-size: 100vw 400px;
+    }
+  }
