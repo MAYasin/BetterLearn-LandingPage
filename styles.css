@@ -304,6 +304,17 @@ figure img {
 
 /*main section ends*/
 
+.btn-learnmore{
+    color: white;
+    padding: 10px;
+    background-color: rgb(75, 22, 99);
+    max-width: 150px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
 .video-content {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -338,7 +349,7 @@ iframe {
     }
 }
 
-/*video section*/
+/*video section ends*/
 
 .content {
     padding: 10px 15px 10px 15px;
