@@ -447,58 +447,7 @@ iframe {
     align-self: center;
 }
 
-.user-title>h2 {
-    font-weight: 600;
-}
-
-.flex-container {
-    max-width: 80vw;
-    margin: 0 auto;
-    display: flex;
-    padding: 1em;
-}
-
-.flex-item {
-    flex: 1;
-    min-width: 250px;
-    /* border: 1px solid rgba(0, 0, 0, .05);
-    border-radius: 8px; */
-}
-
-.flex-item:not(:last-child) {
-    margin-right: 2em;
-}
-
-.package-img img {
-    width: 40vw;
-    height: fit-content;
-}
-
-.package {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: 0.25s;
-    display: flex;
-    flex-direction: column;
-}
-
-/* .package:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    transform: scale(1.025);
-} */
-
-.package .header {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    border-bottom: 5px var(--text-color) solid;
-    font-size: larger;
+.user-title {
     font-weight: 600;
 }
 
@@ -509,240 +458,12 @@ iframe {
     margin: auto;
 }
 
-.package li {
-    color: rgba(55, 53, 47, 0.6);
-    background-color: #fff;
-    padding: 1.2em;
-    padding-left: 30px !important;
-}
-
-li.features:before {
-    content: '⚫';
-    padding-right: 5px;
-}
-
-li.features {
-    text-align: left;
-    padding: 10px;
-}
-
-/* li.first-feat {
-    margin-top: 30px;
-} */
-
-.package .gray {
-    background-color: #f7f7f7;
-    color: black;
-    font-weight: 600;
-    font-size: 40px;
-    padding: .8em;
-    line-height: 80%;
-}
-
-.dolla {
-    top: -.2em;
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: initial;
-}
-
-.month {
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.user-button {
-    background-color: white;
-    border: 1px solid var(--text-color);
-    border-radius: 2em;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: .75em 1.5em;
-    font-size: 1em;
-}
-
-@media only screen and (max-width: 984px) {
-    .flex-container {
-        flex-wrap: wrap;
-    }
-    .flex-item {
-        flex: 0 0 100%;
-        margin-bottom: 2em;
-        width: 100%;
-    }
-    .package:hover {
-        box-shadow: none;
-        transform: none;
-    }
-    .user-button {
-        padding: .75em 1.5em;
-    }
-    figure img {
-        width: 80vw !important;
-    }
-}
-
-@media screen and (min-width: 820px) {
-    .package-img img {
-        width: 15vw;
-        height: fit-content;
-    }
-    .package .header {
-        max-height: 200px;
-    }
-    .flex-container {
-        flex-wrap: wrap;
-    }
-    .flex-item {
-        flex: 0 0 50%;
-        margin-bottom: 2em;
-    }
-    .flex-item:not(:last-child) {
-        margin-right: 0;
-    }
-    .flex-item:nth-child(even) {
-        padding-left: 1em;
-    }
-    .flex-item:nth-child(odd) {
-        padding-right: 1em;
-    }
-    .highlight {
-        border: 1px solid #333;
-        border-radius: 50px;
-    }
-    .highlight:hover, .special:hover {
-        background: black;
-        color: white;
-        border-bottom: none;
-    }
-    .container__ImageRight {
-        order: 2;
-        margin-left: 8.33333%;
-    }
-    .content__ImageRight {
-        left: 0;
-    }
-    .container__ImageLeft {
-        order: 1;
-    }
-    .content__ImageLeft {
-        right: 0;
-    }
-    .content__TextLeft {
-        order: 1;
-    }
-    .content__TextRight {
-        margin-left: 8.33333%;
-        order: 2;
-    }
-    .inner-content {
-        max-width: 80vw;
-        padding-top: 100px;
-        margin-right: auto;
-        margin-left: auto;
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .inner-content-text {
-        padding-right: .9375rem;
-        padding-left: .9375rem;
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-        display: flex;
-        min-height: 550px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .inner-content-title {
-        margin-top: 25px;
-        margin-right: 60px;
-        font-size: 2.125rem;
-        font-weight: 700;
-        color: var(--text-color);
-    }
-    .inner-content-para {
-        margin-top: 25px;
-        margin-right: 60px;
-        font-size: 1.125rem;
-        line-height: 1.875rem;
-        letter-spacing: .04375rem;
-        font-style: normal;
-        font-weight: 400;
-        color: #4c4c4c;
-    }
-    .inner-image-container {
-        position: relative;
-        padding-right: .78125rem;
-        padding-left: .78125rem;
-        flex: 0 0 50%;
-        max-width: 50%;
-        height: auto;
-    }
-    .inner-content-image {
-        position: absolute;
-        top: 0;
-        width: calc(100% - 12.5px);
-        height: 100%;
-    }
-    .section-images {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}
-
 @media (max-width: 768px) {
     h1 {
         font-size: 24px;
     }
 }
 
-/* width */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-
-::-webkit-scrollbar-track {
-    background: #ffffff;
-}
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: rgb(83, 83, 83);
-}
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(41, 41, 41);
-}
-
-/* Style the counter cards */
-
-.btn {
-    color: #ffffff;
-    padding: 0.8rem;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    font-weight: 400;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: transparent;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-}
 
 .cards {
     display: flex;
@@ -883,4 +604,29 @@ li.features {
 .problem-section{
     margin-left: 80px;
     margin-right: 80px;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: rgb(83, 83, 83);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(41, 41, 41);
 }
