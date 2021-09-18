@@ -1,7 +1,8 @@
 :root {
-    --text-color: rgb(36, 20, 82);
-    --primary-color: rgb(103, 69, 184);
-    --primary-bg-color: #ffffff;
+    --text-color: rgb(20, 24, 82);
+    --primary-color: #FAFCFF;
+    --primary-bg-color: #EFF6FF;
+    --footer-color: #D9E4F3;
 }
 
 * {
@@ -64,7 +65,7 @@ html, body {
 #header-img {
     margin-left: 20px;
     float: left;
-    height: 80px;
+    height: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -86,7 +87,7 @@ nav ul li a {
     display: block;
     font-size: 1.15;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     padding: 10px;
 }
 
@@ -112,7 +113,7 @@ a.highlight {
 }
 
 #header .menu-icon .nav-icon {
-    background: white;
+    background: var(--text-color);
     display: block;
     height: 3px;
     position: relative;
@@ -122,7 +123,7 @@ a.highlight {
 }
 
 #header .menu-icon .nav-icon:before, #header .menu-icon .nav-icon:after {
-    background: white;
+    background: var(--text-color);
     content: '';
     display: block;
     height: 100%;
@@ -162,6 +163,68 @@ a.highlight {
     transform: rotate(45deg);
     top: 0;
 }
+
+@media only screen and (min-width: 984px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-flow: wrap;
+        margin-left: 50px;
+    }
+    .menu-container {
+        max-width: 100vw;
+    }
+    #header-img {
+        margin-top: 5px;
+    }
+    .menu {
+        margin-top: 20px;
+    }
+    nav {
+        margin-right: 20px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul li {
+        float: left;
+        list-style: none;
+        padding: 0.5em 1em;
+    }
+    nav ul li a {
+        font-size: 1.1em;
+        text-decoration: none;
+        /* color: #333; */
+        padding: 0;
+    }
+    a.highlight {
+        font-size: 1.3em;
+        text-decoration: none;
+        /* color: #333; */
+        padding: 0.5em 1em;
+    }
+    #header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    #header .menu-icon {
+        display: none;
+    }
+    #header-img {
+        height: 60px;
+        width: 200px;
+    }
+    #header{
+        height: 70px;
+    }
+}
+
+/*header ends*/
 
 main {
     display: flex;
@@ -607,55 +670,7 @@ input[type="email"] {
     .container {
         max-width: 80vw;
     }
-    .menu-container {
-        max-width: 100vw;
-    }
-    header {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        flex-flow: wrap;
-    }
-    #header-img {
-        margin-left: -100px;
-    }
-    .menu {
-        margin-top: 20px;
-    }
-    nav {
-        margin-right: -100px;
-    }
-    nav ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-    }
-    nav ul li {
-        float: left;
-        list-style: none;
-        padding: 0.5em 1em;
-    }
-    nav ul li a {
-        font-size: 1.3em;
-        text-decoration: none;
-        /* color: #333; */
-        padding: 0;
-    }
-    a.highlight {
-        font-size: 1.3em;
-        text-decoration: none;
-        /* color: #333; */
-        padding: 0.5em 1em;
-    }
-    #header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-    #header .menu-icon {
-        display: none;
-    }
+    
     .highlight {
         border: 1px solid #333;
         border-radius: 50px;
