@@ -306,9 +306,11 @@ figure img {
 
 .btn-learnmore {
     color: white;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     background-color: rgb(75, 22, 99);
-    max-width: 150px;
+    width: 140px;
     border-radius: 5px;
     margin: auto;
     margin-top: 30px;
@@ -353,83 +355,6 @@ iframe {
 .content {
     margin-bottom: 80px;
     background: var(--primary-color);
-}
-
-.inner-content {
-    padding-top: 50px;
-}
-
-.inner-content-text {
-    padding-right: .78125rem;
-    padding-left: .78125rem;
-    padding-bottom: 40px;
-}
-
-.inter-content-subtitle {
-    position: relative;
-    display: inline-block;
-    padding-left: 40px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: .10938rem;
-    color: #000000;
-}
-
-.inter-content-subtitle::before {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    display: block;
-    width: 25px;
-    height: 5px;
-    content: "";
-    background-color: var(--text-color);
-    opacity: 0.7;
-}
-
-.inner-content-title {
-    margin-top: 25px;
-    margin-right: 60px;
-    font-size: 2.125rem;
-    font-weight: 700;
-    color: var(--text-color);
-}
-
-.inner-content-para {
-    margin-top: 25px;
-    margin-right: 60px;
-    font-size: 1rem;
-    line-height: 1.875rem;
-    letter-spacing: .04375rem;
-    font-style: normal;
-    font-weight: 400;
-    color: #4c4c4c;
-}
-
-.inner-image-container {
-    position: relative;
-    padding-right: .78125rem;
-    padding-left: .78125rem;
-    flex: 0 0 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-.inner-content-image {
-    position: relative;
-    height: 350px;
-}
-
-.section-images {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .user-container {
