@@ -10,6 +10,13 @@
     box-sizing: border-box;
 }
 
+i {
+    font-family: FontAwesome !important;
+    color: #000000;
+    font-style: normal;
+    margin: 5px;
+}
+
 section {
     width: 100%;
 }
@@ -417,6 +424,7 @@ iframe {
     border-radius: 50%;
     border: 1px solid red;
     width: 100px;
+    margin: auto;
 }
 
 .package li {
@@ -915,16 +923,20 @@ input[type="email"] {
 
 .card {
     background-color: white;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .card_content {
-    padding: 1rem;
-    background: linear-gradient(to bottom left, rgb(71, 42, 155) 40%, rgb(152, 69, 184) 100%);
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .card_content a {
@@ -933,23 +945,25 @@ input[type="email"] {
 }
 
 .card_title {
-    color: #ffffff;
-    font-size: 1.1rem;
+    color: black;
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: capitalize;
     margin: 0px;
 }
-.card_image{
-    /* display: flex; */
+
+.card_image {
+    display: flex;
     padding: 20px;
 }
+
 .card_text {
-    color: #ffffff;
+    color: black;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .card:hover {
@@ -995,15 +1009,15 @@ input[type="email"] {
     }
 }
 
-.team-section{
+.team-section {
     background-color: var(--primary-color);
 }
 
 .user-cards_item {
     display: flex;
     padding: 1rem;
+    width: 100%;
 }
-
 
 @media (min-width: 40rem) {
     .user-cards_item {
