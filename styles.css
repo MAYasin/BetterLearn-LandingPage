@@ -56,7 +56,7 @@ footer {
     overflow: hidden;
 }
 
-.btn-cover{
+.btn-cover {
     background-color: var(--text-color);
     color: white;
     padding: 8px;
@@ -64,7 +64,7 @@ footer {
     border: 2px solid var(--text-color);
 }
 
-.btn-cover:hover{
+.btn-cover:hover {
     background-color: white;
     color: var(--text-color);
 }
@@ -187,7 +187,7 @@ a.highlight {
 }
 
 @media only screen and (min-width: 984px) {
-    .btn-cover{
+    .btn-cover {
         margin-top: -8px;
     }
     header {
@@ -504,7 +504,26 @@ iframe {
     }
 }
 
+/*icon colors*/
+
+.fa-linkedin {
+    color: #2867B2;
+}
+
+.fa-github {
+    color: #6e5494;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
 /*clouds*/
+
 .background--clouds {
     background-position-y: bottom;
     background-repeat: repeat-x;
