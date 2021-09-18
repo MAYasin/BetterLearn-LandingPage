@@ -352,7 +352,7 @@ iframe {
 /*video section ends*/
 
 .content {
-    padding: 10px 15px 10px 15px;
+    margin-bottom: 80px;
     background: var(--primary-color);
 }
 
@@ -615,10 +615,6 @@ li.features {
         background: black;
         color: white;
         border-bottom: none;
-    }
-    .content {
-        padding: 0 68px 0 68px;
-        background: var(--primary-color);
     }
     .container__ImageRight {
         order: 2;
