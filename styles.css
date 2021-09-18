@@ -388,6 +388,8 @@ iframe {
     }
 }
 
+/*card*/
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -399,17 +401,18 @@ iframe {
 .cards_item {
     display: flex;
     padding: 1rem;
+    width: 100%;
 }
 
 @media (min-width: 40rem) {
     .cards_item {
-        width: 50%;
+        width: 25%;
     }
 }
 
 @media (min-width: 56rem) {
     .cards_item {
-        width: 50%;
+        width: 25%;
     }
 }
 
@@ -460,14 +463,6 @@ iframe {
 
 .card:hover {
     cursor: pointer;
-    /* box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
-    transform: scale(1.025); */
-    top: -10px;
-}
-.user-cards_item {
-    display: flex;
-    padding: 1rem;
-    width: 100%;
 }
 
 .card img {
