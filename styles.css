@@ -56,6 +56,19 @@ footer {
     overflow: hidden;
 }
 
+.btn-cover{
+    background-color: var(--text-color);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+}
+
+.btn-cover:hover{
+    background-color: white;
+    color: var(--text-color);
+}
+
 .container {
     max-width: 100vw;
     margin: 0 auto;
@@ -174,6 +187,9 @@ a.highlight {
 }
 
 @media only screen and (min-width: 984px) {
+    .btn-cover{
+        margin-top: -8px;
+    }
     header {
         display: flex;
         justify-content: space-between;
