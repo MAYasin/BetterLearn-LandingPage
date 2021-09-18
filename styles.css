@@ -304,7 +304,7 @@ figure img {
 
 /*main section ends*/
 
-.btn-learnmore{
+.btn-learnmore {
     color: white;
     padding: 10px;
     background-color: rgb(75, 22, 99);
@@ -313,7 +313,6 @@ figure img {
     margin: auto;
     margin-top: 30px;
 }
-
 
 .video-content {
     padding-top: 80px;
@@ -464,7 +463,6 @@ iframe {
     }
 }
 
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -553,7 +551,6 @@ iframe {
     padding-bottom: 200px;
 }
 
-
 @media (min-width: 40rem) {
     .user-cards_item {
         width: 50%;
@@ -566,11 +563,10 @@ iframe {
     }
 }
 
-.problem-section{
+.problem-section {
     margin-left: 80px;
     margin-right: 80px;
 }
-
 
 /* width */
 
