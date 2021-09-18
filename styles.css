@@ -170,7 +170,7 @@ a.highlight {
         justify-content: space-between;
         flex-direction: row;
         flex-flow: wrap;
-        margin-left: 50px;
+        padding-left: 50px;
     }
     .menu-container {
         max-width: 100vw;
@@ -292,6 +292,8 @@ figure img {
         max-width: 85vw;
     }
 }
+
+/*main section ends*/
 
 .video-content {
     padding-top: 80px;
