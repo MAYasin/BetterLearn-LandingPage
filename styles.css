@@ -66,13 +66,15 @@ footer {
     }
 }
 
-.footer-content div span:nth-child(1) {
-    margin-right: auto;
+.footer-content div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 984px) {
-    .footer-content span {
-        margin-bottom: 20px;
+    .footer-content div {
+        margin-top: 20px;
     }
 }
 
