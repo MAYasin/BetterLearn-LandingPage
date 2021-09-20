@@ -281,6 +281,10 @@ main {
     padding-top: 100px;
 }
 
+.reverse-column{
+    flex-flow: column;
+}
+
 .hero {
     text-align: center;
     padding-left: 20px;
