@@ -272,6 +272,15 @@ main {
     padding-top: 100px;
 }
 
+.main-content-section{
+    display: flex;
+    flex-flow: column-reverse;
+    color: var(--text-color);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
 .hero {
     text-align: center;
     padding-left: 20px;
@@ -301,6 +310,11 @@ main {
     margin-bottom: auto;
 }
 
+.main-content-section .hero-title-primary{
+    font-weight: 600;
+    line-height: 58px;
+}
+
 figure {
     text-align: center;
 }
@@ -318,12 +332,19 @@ figure img {
     main {
         flex-flow: row;
     }
+    .main-content-section{
+        flex-flow: row;
+    }
     .hero {
         text-align: left;
     }
     .hero h1 {
         font-size: 4em;
         line-height: 70px;
+    }
+    .main-content-section .hero h1{
+        font-size: 3.5em;
+        line-height: 55px;
     }
     .hero p {
         font-size: 1.3em;
