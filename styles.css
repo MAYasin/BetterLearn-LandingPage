@@ -198,6 +198,10 @@ a.highlight {
 }
 
 @media only screen and (min-width: 984px) {
+    .contain-head{
+        width: 85vw;
+        margin: auto;
+    }
     .btn-cover {
         margin-top: -8px;
     }
@@ -206,16 +210,18 @@ a.highlight {
         justify-content: space-between;
         flex-direction: row;
         flex-flow: wrap;
-        padding-left: 50px;
     }
     .menu-container {
         max-width: 100vw;
     }
     #header-img {
+        margin-left: 0px;
         margin-top: 5px;
+        padding-left: 20px;
     }
     .menu {
         margin-top: 20px;
+        margin-right: -20px;
     }
     nav {
         margin-right: 20px;
@@ -230,6 +236,9 @@ a.highlight {
         float: left;
         list-style: none;
         padding: 0.5em 1em;
+    }
+    nav ul li:last-child {
+        padding-right: 0px;
     }
     nav ul li a {
         font-size: 1.1em;
@@ -510,6 +519,12 @@ iframe {
         width: 25%;
     }
 }
+.problem-section ul li:first-child{
+    padding-left: 0px;
+}
+.problem-section ul li:last-child{
+    padding-right: 0px;
+}
 
 .card {
     background-color: white;
@@ -644,8 +659,8 @@ iframe {
 }
 
 .problem-section {
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 85vw;
+    margin: auto;
 }
 
 /* width */
