@@ -1,8 +1,9 @@
 :root {
-    --text-color: rgb(20, 24, 82);
+    --text-color: rgba(10,48,66,1);
     --primary-color: #FAFCFF;
     --primary-bg-color: #EFF6FF;
     --footer-color: #D9E4F3;
+    --bl-color1: rgba(108,99,255,1);
 }
 
 * {
@@ -270,9 +271,8 @@ main {
 
 .hero-title-primary {
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 10vmin;
-    line-height: 58px;
 }
 
 .hero-title-sub {
@@ -300,6 +300,10 @@ figure img {
     width: 80vw;
 }
 
+.bl-colors{
+    color: var(--bl-color1);
+}
+
 @media only screen and (min-width: 984px) {
     main {
         flex-flow: row;
@@ -308,8 +312,8 @@ figure img {
         text-align: left;
     }
     .hero h1 {
-        font-size: 3.5em;
-        line-height: 55px;
+        font-size: 4em;
+        line-height: 70px;
     }
     .hero p {
         font-size: 1.3em;
