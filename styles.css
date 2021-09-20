@@ -354,7 +354,6 @@ figure img {
 
 .video-content {
     padding-top: 80px;
-    padding-bottom: 80px;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -394,7 +393,7 @@ iframe {
 }
 
 .user-container {
-    padding: 150px 38px 10px 38px;
+    padding: 100px 38px 10px 38px;
     background: var(--primary-color);
     display: flex;
     flex-direction: column;
@@ -516,7 +515,7 @@ iframe {
 
 .team-section {
     padding-top: 0px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 @media (min-width: 40rem) {
