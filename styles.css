@@ -272,7 +272,7 @@ main {
     padding-top: 100px;
 }
 
-.main-content-section{
+.main-content-section {
     display: flex;
     flex-flow: column-reverse;
     color: var(--text-color);
@@ -310,9 +310,19 @@ main {
     margin-bottom: auto;
 }
 
-.main-content-section .hero-title-primary{
+.main-content-section .hero-title-primary {
+    font-size: 2em;
     font-weight: 600;
-    line-height: 58px;
+}
+
+.main-content-section .hero-title-sub {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.main-content-section h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 figure {
@@ -328,11 +338,22 @@ figure img {
     color: var(--bl-color1);
 }
 
+.main-content-section-image figure img {
+    width: 60vw;
+}
+
+.main-content-section-text {
+    margin: auto;
+}
+
 @media only screen and (min-width: 984px) {
+    .main-content-section-image figure img {
+        width: 30vw;
+    }
     main {
         flex-flow: row;
     }
-    .main-content-section{
+    .main-content-section {
         flex-flow: row;
     }
     .hero {
@@ -342,8 +363,10 @@ figure img {
         font-size: 4em;
         line-height: 70px;
     }
-    .main-content-section .hero h1{
-        font-size: 3.5em;
+    .main-content-section .hero h1 {
+        margin: 0;
+        font-size: 2.7em;
+        font-weight: 600;
         line-height: 55px;
     }
     .hero p {
