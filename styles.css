@@ -1,9 +1,9 @@
 :root {
-    --text-color: rgba(10,48,66,1);
+    --text-color: rgba(10, 48, 66, 1);
     --primary-color: #FAFCFF;
     --primary-bg-color: #EFF6FF;
     --footer-color: #D9E4F3;
-    --bl-color1: rgba(108,99,255,1);
+    --bl-color1: rgba(108, 99, 255, 1);
 }
 
 * {
@@ -51,11 +51,13 @@ footer {
     justify-content: space-around;
     flex-flow: row wrap;
 }
-footer div span:nth-child(1){
+
+footer div span:nth-child(1) {
     padding-right: 30px;
 }
+
 @media only screen and (max-width: 984px) {
-    footer span{
+    footer span {
         margin-bottom: 20px;
     }
 }
@@ -268,7 +270,6 @@ main {
     height: 100vh;
     margin: 0;
     padding-top: 100px;
-
 }
 
 .hero {
@@ -289,12 +290,13 @@ main {
     font-weight: 300;
     font-size: 4.6vmin;
 }
-.hero-image{
+
+.hero-image {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.hero-section{
+.hero-section {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -308,7 +310,7 @@ figure img {
     width: 80vw;
 }
 
-.bl-colors{
+.bl-colors {
     color: var(--bl-color1);
 }
 
@@ -335,12 +337,11 @@ figure img {
     .container {
         max-width: 85vw;
     }
-    .hero-image{
+    .hero-image {
         margin-top: auto;
         margin-bottom: auto;
     }
-    
-    .hero-section{
+    .hero-section {
         margin-top: auto;
         margin-bottom: auto;
     }
@@ -409,12 +410,9 @@ iframe {
 
 .user-title {
     margin-bottom: 50px;
-    font-size: 30px;
+    font-size: 6vmin;
     color: var(--text-color);
     align-self: center;
-}
-
-.user-title {
     font-weight: 600;
 }
 
@@ -431,8 +429,13 @@ iframe {
     }
 }
 
-/*card*/
+@media only screen and (min-width: 984px) {
+    .user-title {
+        font-size: 3vw;
+    }
+}
 
+/*card*/
 
 .cards {
     display: flex;
@@ -463,13 +466,7 @@ iframe {
 .card {
     background-color: white;
     border-radius: 0.5rem;
-    box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075), 0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075), 0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -535,6 +532,31 @@ iframe {
 @media (min-width: 56rem) {
     .user-cards_item {
         width: 25%;
+    }
+}
+
+/* .problem-section .card{
+    box-shadow: none;
+} */
+
+.problem-section .card .card_title {
+    color: var(--text-color);
+    font-size: 6vmin;
+}
+
+.problem-section .card .card_text {
+    color: var(--text-color);
+    font-size: 3vmin;
+}
+
+@media only screen and (min-width: 984px) {
+    .problem-section .card .card_title {
+        color: var(--text-color);
+        font-size: 2.6vmax;
+    }
+    .problem-section .card .card_text {
+        color: var(--text-color);
+        font-size: 1.5vw;
     }
 }
 
