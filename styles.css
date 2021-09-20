@@ -44,12 +44,20 @@ html, body {
 }
 
 footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     background: var(--footer-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+footer div span:nth-child(1){
+    padding-right: 30px;
+}
+@media only screen and (max-width: 984px) {
+    footer span{
+        margin-bottom: 20px;
+    }
 }
 
 .embed-container {
