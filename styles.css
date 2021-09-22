@@ -87,16 +87,16 @@ footer {
 }
 
 .btn-cover {
-    background-color: var(--text-color);
+    background-color: var(--bl-color1);
     color: white;
     padding: 8px;
     border-radius: 5px;
-    border: 2px solid var(--text-color);
+    border: 2px solid var(--bl-color1);
 }
 
 .btn-cover:hover {
     background-color: white;
-    color: var(--text-color);
+    color: var(--bl-color1);
 }
 
 .container {
