@@ -395,14 +395,14 @@ main {
 .hero-title-primary {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
-    font-size: 10vmin;
+    font-size: 2.5rem;
 }
 
 .hero-title-sub {
-    margin: 0.2em 0 1em 0;
+    margin: 0.5em 0 1em 0;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 4.6vmin;
+    font-size: 1.5rem;
 }
 
 .hero-image {
@@ -559,7 +559,7 @@ iframe {
 
 .user-title {
     margin-bottom: 50px;
-    font-size: 6vmin;
+    font-size: 2rem;
     color: var(--text-color);
     align-self: center;
     font-weight: 600;
@@ -580,7 +580,7 @@ iframe {
 
 @media only screen and (min-width: 984px) {
     .user-title {
-        font-size: 3vw;
+        font-size: 2.5rem;
     }
 }
 
@@ -709,22 +709,22 @@ iframe {
 
 .problem-section .card .card_title {
     color: var(--text-color);
-    font-size: 6vmin;
+    font-size: 2rem;
 }
 
 .problem-section .card .card_text {
     color: var(--text-color);
-    font-size: 3vmin;
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 984px) {
     .problem-section .card .card_title {
         color: var(--text-color);
-        font-size: 2.6vmax;
+        font-size: 2rem;
     }
     .problem-section .card .card_text {
         color: var(--text-color);
-        font-size: 1.5vw;
+        font-size: 1.5rem;
     }
 }
 
