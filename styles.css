@@ -52,7 +52,7 @@ footer {
     flex-flow: row wrap;
 }
 
-.pb{
+.pb {
     padding-bottom: 80px;
 }
 
@@ -70,7 +70,7 @@ footer {
     }
 }
 
-.footer-content div{
+.footer-content div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -118,9 +118,22 @@ footer {
 #header-img {
     margin-left: 20px;
     float: left;
+    width: 120px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.header-img-bl {
+    padding-left: 10px;
+    float: left;
     height: 70px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
+}
+
+.img-border {
+    border-right: 2.5px solid rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
@@ -128,7 +141,7 @@ nav ul {
     clear: both;
     margin: 0;
     padding: 0;
-    max-height: 0;
+    max-height: 0px;
     transition: max-height .2s ease-out;
 }
 
@@ -144,6 +157,12 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li a i {
+    font-size: 0.9em;
+    margin-left: 0;
+    color: var(--text-color);
+}
+
 a.highlight {
     display: block;
     font-size: 1.15;
@@ -151,6 +170,56 @@ a.highlight {
     color: white;
     padding: 10px;
 }
+
+/*TEST*/
+
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dd-button {
+    cursor: pointer;
+}
+
+.dd-input {
+    display: none;
+}
+
+.dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    height: 100px;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+    display: none;
+}
+
+.dd-input:checked+.dd-menu {
+    display: block;
+}
+
+.dd-menu div {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-menu div:hover {
+    background-color: #f6f6f6;
+}
+
 
 /* menu icon */
 
@@ -235,9 +304,14 @@ a.highlight {
         max-width: 100vw;
     }
     #header-img {
-        margin-left: 0px;
-        margin-top: 5px;
+        height: 50px;
+        width: 150px;
+    }
+    .header-img-bl {
+        margin-top: 10px;
         padding-left: 20px;
+        height: 60px;
+        width: 200px;
     }
     .menu {
         margin-top: 20px;
@@ -251,6 +325,8 @@ a.highlight {
         padding: 0;
         display: flex;
         flex-direction: row;
+        max-height: 70px;
+        overflow: visible;
     }
     nav ul li {
         float: left;
@@ -279,10 +355,6 @@ a.highlight {
     }
     #header .menu-icon {
         display: none;
-    }
-    #header-img {
-        height: 60px;
-        width: 250px;
     }
     #header {
         height: 70px;
