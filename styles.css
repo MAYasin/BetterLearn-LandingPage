@@ -124,12 +124,46 @@ footer {
     margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 984px) {
+    .contain-head {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-flow: nowrap;
+    }
+    #bl-logo {
+        content: url(assests/logo/black-logo-transparent2x.png);
+    }
+}
+
+@media only screen and (max-width: 984px) {
+    #bl-logo {
+        content: url(assests/logo/icon-black-fg2x.png);
+    }
+}
+
+.anim-area {
+    width: auto !important;
+    height: auto !important;
+    overflow: hidden;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .header-img-bl {
     padding-left: 10px;
     float: left;
     height: 70px;
     padding-top: 15px;
     padding-bottom: 10px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .img-border {
@@ -172,7 +206,6 @@ a.highlight {
 }
 
 /*TEST*/
-
 
 /* Dropdown */
 
@@ -220,7 +253,6 @@ a.highlight {
     background-color: #f6f6f6;
 }
 
-
 /* menu icon */
 
 .menu {
@@ -232,6 +264,9 @@ a.highlight {
     padding: 28px 20px;
     user-select: none;
     float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #header .menu-icon .nav-icon {
@@ -293,12 +328,6 @@ a.highlight {
     }
     .btn-cover {
         margin-top: -8px;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-flow: wrap;
     }
     .menu-container {
         max-width: 100vw;
