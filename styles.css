@@ -52,7 +52,7 @@ footer {
     flex-flow: row wrap;
 }
 
-.pb{
+.pb {
     padding-bottom: 80px;
 }
 
@@ -70,7 +70,7 @@ footer {
     }
 }
 
-.footer-content div{
+.footer-content div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -123,18 +123,17 @@ footer {
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.header-img-bl{
+
+.header-img-bl {
     padding-left: 10px;
     float: left;
     height: 70px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 984px) {
-    .img-border{
-        border-right: 2.5px solid rgba(0, 0, 0, 0.7);
-    }
+.img-border {
+    border-right: 2.5px solid rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
@@ -249,15 +248,14 @@ a.highlight {
         max-width: 100vw;
     }
     #header-img {
-        margin-left: 0px;
-        margin-top: 5px;
-        padding-left: 20px;
+        height: 50px;
+        width: 150px;
     }
-    .header-img-bl{
-        margin-left: 0px;
-        margin-left: -50px;
-        margin-top: 5px;
+    .header-img-bl {
+        margin-top: 10px;
         padding-left: 20px;
+        height: 60px;
+        width: 200px;
     }
     .menu {
         margin-top: 20px;
@@ -299,14 +297,6 @@ a.highlight {
     }
     #header .menu-icon {
         display: none;
-    }
-    #header-img {
-        height: 60px;
-        width: 200px;
-    }
-    .header-img-bl{
-        height: 60px;
-        width: 250px;
     }
     #header {
         height: 70px;
