@@ -15,7 +15,7 @@
 
         <div class="contain-head">
             <!--   Logo -->
-            <a href="#home" class="nav-link">
+            <a href="index.html" class="nav-link">
                 <div class="logo-box">
                     <picture>
                         <img id="header-img" alt="logo" src="assests/logo/nybble-logo.svg" />
@@ -29,8 +29,14 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul class="menu">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="betterlearn.html" class="nav-link">Solutions</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropbtn" for="btnControl">Solutions <i class="fas fa-chevron-down"></i></div>
+                            <div class="dropdown-content">
+                                <a href="betterlearn.html">BetterLearn</a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="#team" class="nav-link">The Team</a></li>
                     <li><a href="#learnmore" class="nav-link btn-cover">Learn More</a></li>
                 </ul>
@@ -148,9 +154,11 @@
             </div>
         </div>
 
-        <div class="btn-learnmore">
-            <h3>Learn More</h3>
-        </div>
+        <a href="betterlearn.html">
+            <div class="btn-learnmore">
+                <h3>Learn More</h3>
+            </div>
+        </a>
 
         <div class="background--clouds"></div>
     </section>
@@ -160,7 +168,8 @@
             <h3>Meet the Nybble. Team</h3>
         </div>
         <section class="hero container main-content-section-text">
-            <p class="hero-title-sub">We met in 2019. Team Nybble members are versatile, cooperative, and analytically inclined. We joined
+            <p class="hero-title-sub">We met in 2019. Team Nybble members are versatile, cooperative, and analytically
+                inclined. We joined
                 forces to work on our third year project. Having had the experience of making an ecomerce web app as a
                 group in the year prior. We improved our approach by sharing the tasks on vertical slices meaning
                 everyone works on both front-end and back-end.</p>
