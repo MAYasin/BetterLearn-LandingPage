@@ -132,7 +132,7 @@ footer {
 }
 
 @media only screen and (max-width: 984px) {
-    #header-img{
+    .img-border{
         border-right: 2.5px solid rgba(0, 0, 0, 0.7);
     }
 }
