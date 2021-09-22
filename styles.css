@@ -236,6 +236,7 @@ a.highlight {
     }
     #header-img {
         margin-left: 0px;
+        margin-left: -50px;
         margin-top: 5px;
         padding-left: 20px;
     }
