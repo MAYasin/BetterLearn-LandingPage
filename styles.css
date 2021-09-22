@@ -414,6 +414,7 @@ a.highlight {
 /*header ends*/
 
 main {
+    min-height: 100vh;
     display: flex;
     flex-flow: column-reverse;
     color: var(--text-color);
@@ -505,7 +506,6 @@ figure img {
         width: 30vw;
     }
     main {
-        height: 100vh;
         flex-flow: row;
     }
     .main-content-section {
