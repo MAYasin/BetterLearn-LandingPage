@@ -265,7 +265,7 @@ a.highlight {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #f9f9f9;
+    background-color: transparent;
     transition: max-height 0.25s ease-in;
 }
 
