@@ -118,9 +118,23 @@ footer {
 #header-img {
     margin-left: 20px;
     float: left;
+    width: 120px;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.header-img-bl{
+    padding-left: 10px;
+    float: left;
     height: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 984px) {
+    #header-img{
+        border-right: 2.5px solid rgba(0, 0, 0, 0.7);
+    }
 }
 
 nav ul {
@@ -236,6 +250,11 @@ a.highlight {
     }
     #header-img {
         margin-left: 0px;
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+    .header-img-bl{
+        margin-left: 0px;
         margin-left: -50px;
         margin-top: 5px;
         padding-left: 20px;
@@ -282,6 +301,10 @@ a.highlight {
         display: none;
     }
     #header-img {
+        height: 60px;
+        width: 200px;
+    }
+    .header-img-bl{
         height: 60px;
         width: 250px;
     }
