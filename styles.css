@@ -572,6 +572,12 @@ figure img {
     border-radius: 5px;
     margin: auto;
     margin-top: 30px;
+    border: 2px solid var(--bl-color1);
+}
+
+.btn-learnmore:hover {
+    background-color: white;
+    color: var(--bl-color1);
 }
 
 a:link {
