@@ -134,6 +134,7 @@ footer {
         flex-direction: row;
         flex-flow: nowrap;
     }
+
     #bl-logo {
         content: url(assests/logo/black-logo-transparent2x.png);
     }
@@ -142,6 +143,9 @@ footer {
 @media only screen and (max-width: 984px) {
     #bl-logo {
         content: url(assests/logo/icon-black-fg2x.png);
+    }
+    nav ul li .dropdown {
+        padding: 10px;
     }
 }
 
@@ -191,10 +195,6 @@ nav ul li a {
     font-size: 1.15;
     text-decoration: none;
     color: var(--text-color);
-    padding: 10px;
-}
-
-nav ul li .dropdown {
     padding: 10px;
 }
 
