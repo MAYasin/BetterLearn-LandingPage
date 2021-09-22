@@ -141,7 +141,7 @@ nav ul {
     clear: both;
     margin: 0;
     padding: 0;
-    max-height: 0;
+    max-height: 0px;
     transition: max-height .2s ease-out;
 }
 
@@ -157,6 +157,12 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li a i {
+    font-size: 0.9em;
+    margin-left: 0;
+    color: var(--text-color);
+}
+
 a.highlight {
     display: block;
     font-size: 1.15;
@@ -164,6 +170,56 @@ a.highlight {
     color: white;
     padding: 10px;
 }
+
+/*TEST*/
+
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dd-button {
+    cursor: pointer;
+}
+
+.dd-input {
+    display: none;
+}
+
+.dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    height: 100px;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+    display: none;
+}
+
+.dd-input:checked+.dd-menu {
+    display: block;
+}
+
+.dd-menu div {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-menu div:hover {
+    background-color: #f6f6f6;
+}
+
 
 /* menu icon */
 
@@ -269,6 +325,8 @@ a.highlight {
         padding: 0;
         display: flex;
         flex-direction: row;
+        max-height: 70px;
+        overflow: visible;
     }
     nav ul li {
         float: left;
