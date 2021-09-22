@@ -108,8 +108,12 @@ footer {
     display: flex;
 }
 
+.bg-color{
+    background-color: var(--primary-bg-color);
+}
+
 #header {
-    background: var(--primary-color);
+    background: var(--primary-bg-color);
     /* box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1); */
     position: fixed;
     top: 0;
@@ -413,9 +417,6 @@ a.highlight {
     }
     #header .menu-icon {
         display: none;
-    }
-    #header {
-        height: 70px;
     }
 }
 
