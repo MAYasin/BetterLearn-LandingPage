@@ -15,14 +15,15 @@
 
         <div class="contain-head">
             <!--   Logo -->
-            <a href="#home" class="nav-link">
-                <div class="logo-box">
-                    <img id="header-img" class="img-border" alt="logo" src="assests/logo/nybble-logo.svg" />
-                    <div class="anim-area">
-                        <img id="bl-logo" class="header-img-bl" alt="logo" />
-                    </div>
+
+            <div class="logo-box">
+                <img id="header-img" class="img-border" alt="logo" src="assests/logo/nybble-logo.svg" />
+
+                <div class="anim-area">
+                    <a href="betterlearn.html" class="nav-link">
+                        <img id="bl-logo" class="header-img-bl" alt="logo" /></a>
                 </div>
-            </a>
+            </div>
             <!--   Logo -->
 
             <!--   navbar -->
@@ -30,19 +31,14 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
                 <ul class="menu">
-                    <li><a href="#"><label class="dropdown">
-
-                                <div class="dd-button">
-                                    Solutions <i class="fas fa-chevron-down"></i>
-                                </div>
-
-                                <input type="checkbox" class="dd-input" id="test">
-
-                                <div class="dd-menu">
-                                    <div>BetterLearn</div>
-                                </div>
-
-                            </label></a> </li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropbtn" for="btnControl">Solutions <i class="fas fa-chevron-down"></i></div>
+                            <div class="dropdown-content">
+                                <a href="#">BetterLearn</a>
+                            </div>
+                        </div>
+                    </li>
 
                     <li><a href="#learnmore" class="nav-link btn-cover">Learn More</a></li>
                 </ul>
