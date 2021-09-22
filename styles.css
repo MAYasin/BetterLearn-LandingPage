@@ -83,7 +83,6 @@ footer {
 }
 
 .embed-container {
-    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -103,6 +102,10 @@ footer {
 .container {
     max-width: 100vw;
     margin: 0 auto;
+}
+
+.logo-box {
+    display: flex;
 }
 
 #header {
@@ -531,17 +534,30 @@ figure img {
 
 /*main section ends*/
 
+#video{
+    border-radius: 10px;
+}
+
 .btn-learnmore {
+    cursor: pointer;
     color: white;
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: rgb(75, 22, 99);
+    background-color: var(--bl-color1);
     width: 140px;
     border-radius: 5px;
     margin: auto;
     margin-top: 30px;
 }
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
 
 .video-content {
     padding-top: 80px;
