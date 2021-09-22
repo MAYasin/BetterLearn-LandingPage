@@ -194,6 +194,10 @@ nav ul li a {
     padding: 10px;
 }
 
+nav ul li .dropdown {
+    padding: 10px;
+}
+
 a.highlight {
     display: block;
     font-size: 1.15;
@@ -266,6 +270,10 @@ a.highlight {
         max-height: 500px;
         min-width: 160px;
         transition: max-height 0.25s ease-in;
+    }
+    .menu {
+        margin-left: 15px;
+        margin-right: 20px;
     }
     .dropdown-content {
         position: relative;
