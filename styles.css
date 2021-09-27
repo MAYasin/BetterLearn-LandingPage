@@ -125,7 +125,8 @@ footer {
     margin-left: 20px;
     float: left;
     width: 120px;
-    height: 45px;
+    height: auto;
+    padding-right: 20px;
     margin-top: 15px;
     margin-bottom: 10px
 }
@@ -167,11 +168,11 @@ footer {
 }
 
 .header-img-bl {
-    padding-left: 10px;
+    margin-left: 10px;
     float: left;
     height: 70px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     animation: 1s ease-out 0s 1 slideInFromLeft
 }
 
@@ -356,13 +357,13 @@ a.highlight {
         max-width: 100vw
     }
     #header-img {
-        height: 50px;
+        height: auto;
         width: 150px
     }
     .header-img-bl {
-        margin-top: 10px;
-        padding-left: 20px;
-        height: 60px;
+        margin-top: 12px;
+        margin-left: 20px;
+        height: auto;
         width: 200px
     }
     .menu {
